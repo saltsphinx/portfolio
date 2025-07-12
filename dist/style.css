@@ -1,0 +1,163 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../assets/fonts/Roboto-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: Libertinus;
+  src: url("../assets/fonts/LibertinusMono-Regular.ttf");
+}
+
+:root {
+  color: #111;
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about-text {
+  white-space: pre-line;
+  margin-bottom: 0.6rem;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 2rem;
+  background-color: #fafafa;
+}
+
+.contact-buttons {
+  padding: 0.5rem 0;
+}
+
+footer,
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.2rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+h2,
+h3 {
+  margin-bottom: 0.6rem;
+}
+
+header {
+  background: #222;
+  color: #fafafa;
+  margin-bottom: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  margin: 0;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo a:hover {
+  text-decoration: underline;
+}
+
+picture {
+  margin: auto;
+}
+
+picture img {
+  display: block;
+  margin-left: auto;
+  width: 100%;
+}
+
+.project {
+  border: black 1px solid;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.2rem;
+  padding-bottom: 1.5rem;
+  text-decoration: none;
+}
+
+.project:visited {
+  color: black;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+section > p {
+  margin-bottom: 0.6rem;
+}
+
+.wrapper {
+  display: grid;
+  gap: 0.8rem;
+  padding: 0 0.2rem;
+}
+
+@media (min-width: 440px) {
+  .about-section {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+  }
+
+  .about-section * {
+    flex: 1;
+  }
+
+  main,
+  footer,
+  .container {
+    margin: auto;
+    max-width: 700px;
+  }
+  
+  picture img {
+    height: auto;
+    max-width: 360px;
+  }
+
+  .project {
+    flex: 1;
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  main,
+  footer,
+  .container {
+    max-width: 912px;
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
